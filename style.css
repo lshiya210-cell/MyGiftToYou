@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+}
+.merry-xmas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+.merry-xmas button {
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#long-message {
+  font-family: monospace;
+  color: white;
+  font-size: 18px;
+  max-width: 500px;
+  text-align: center;
+  line-height: 1.5;
+  
+}
