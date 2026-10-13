@@ -12,25 +12,22 @@ function typeParagraph() {
 // Listen for the click event on the play button
 document.getElementById("play-btn").addEventListener("click", function() {
   // Clear any existing text just in case they click it again
-  document.getElementById("long-message").innerHTML = "";
-  i = 0;
-  
-  // Wait for 3 seconds (3000 milliseconds) before starting the typing effect
-  setTimeout(typeParagraph, 200);
-});
+    document.getElementById("long-message").innerHTML = "";
+      i = 0;
+        
+          // Wait for 3 seconds (3000 milliseconds) before starting the typing effect
+            setTimeout(typeParagraph, 200);
+            });
+
 // Get the button and audio elements from HTML
 const playBtn = document.getElementById('play-btn');
 const bgMusic = document.getElementById('bg-music');
 
-// Add click listener to start music playback
+// Reset the music to the start and play whenever the button is clicked
 playBtn.addEventListener('click', () => {
-    // Check if the music is currently paused
-        if (bgMusic.paused) {
-                bgMusic.play();
-                        playBtn.textContent = 'Pause'; // Change button label when playing
-                            } else {
-                                    bgMusic.pause();
-                                            playBtn.textContent = 'Play';  // Change button label when paused
-                                                }
-                                                });
+    bgMusic.currentTime = 0; // Rewinds the track to the beginning
+        bgMusic.play();          // Plays the audio
+        });
+        
+
                                                 
